@@ -1,0 +1,53 @@
+---
+import Stats from "../../components/Stats.astro";
+---
+
+<section
+  id="About"
+  class="min-h-screen flex flex-col pt-16 gap-8 items-center justify-center"
+>
+  <div class="grid grid-cols-1 lg:grid-cols-2">
+    <div class="flex flex-col gap-5 items-center mb-7 lg:mb-0">
+      <img
+        src="/images/dot-dager-1.webp"
+        alt="Mariano"
+        class="rounded-full w-[330px] lg:w-[350px] p-2 border-8 border-dot-primary-500/15"
+      />
+      <Stats />
+    </div>
+
+    <div class="flex flex-col gap-5 justify-center items-start px-4 lg:px-0">
+      <div>
+        <p
+          class="text-center lg:text-left text-md lg:text-xl text-pretty max-w-[600px]"
+        >
+          ¡Hola! <b>Soy Mariano</b>, mas conocido como
+          <b class="text-yellow-400"> Dot Dager.</b>
+          <br />
+          <br />
+          Soy <b>desarrollador full stack</b> y <b>creador de contenido</b>, en
+          lo cual, me destaco especialmente por mis videos en Youtube.
+          <br />
+          <br />
+          Me considero amante de los gatos, las guitarras, los pepinos y la filosofia.
+          <!-- Y las porongas 🤫 -->
+          <br />
+          <br />
+          🐈🎸🥒📖
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mockup-code max-w-[500px] mt-4 lg:mt-8">
+    <pre data-prefix="$"><code>dotnet new console -n PicklesApp</code></pre>
+    <pre
+      data-prefix=">"
+      class="text-warning"><code>Creating a new C#...</code></pre>
+    <pre data-prefix="$"><code>cd PicklesApp</code></pre>
+    <pre data-prefix="$"><code>dotnet run</code></pre>
+    <pre
+      data-prefix=">"
+      class="text-success"><code>Enjoy your Pickles!</code></pre>
+  </div>
+</section>
