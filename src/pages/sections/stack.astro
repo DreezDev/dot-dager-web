@@ -1,0 +1,27 @@
+---
+import MyStack from "../../components/MyStack.astro";
+---
+
+<section
+  id="Stack"
+  class="flex lg:-mt-20 flex-col section2 gap-8 items-center justify-center bg-yellow-500/95 py-24"
+>
+  <div class="mt-20 sm:mt-32">
+    <h2 class="text-4xl sm:text-5xl font-bold text-center mb-5">
+      Stack de Desarrollo
+    </h2>
+    <p
+      class="sm:max-w-[500px] px-5 sm:px-0 text-center text-lg sm:text-xl text-pretty"
+    >
+      Al momento de desarrollar mis proyectos suelo preferir lenguajes con
+      tipado fuerte, ya brindan una arquitectura robusta y escalable.
+    </p>
+  </div>
+  <MyStack />
+</section>
+
+<style>
+  .section2 {
+    clip-path: polygon(100% 10%, 100% 90%, 50% 100%, 0 90%, 0% 10%, 50% 25%);
+  }
+</style>
