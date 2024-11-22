@@ -1,0 +1,27 @@
+---
+import Footer from "../components/Footer.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Dot Dager - Full Stack Developer.">
+  <main>
+    <section
+      id="lumber-jack"
+      class="min-h-screen flex flex-col pb-14 gap-6 items-center justify-center"
+    >
+      <embed
+        class="rounded-lg scale-75 h-[1000px] w-[600px] -mb-16"
+        src="https://tbot.xyz/lumber/"
+        type="text/html"
+      />
+      <img
+        src="/images/falopa-1.webp"
+        alt="Dot Dager - Falopa"
+        class="w-[250px] rounded-full p-2 border-8 border-dot-primary-500/15 animate-pulse"
+      />
+    </section>
+  </main>
+  <footer>
+    <Footer />
+  </footer>
+</Layout>
