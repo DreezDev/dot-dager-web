@@ -1,0 +1,55 @@
+---
+import NavLink from "./NavLink.astro";
+import Pickle from "../icons/Pickle.astro";
+---
+
+<div
+  class="navbar w-fit mx-auto px-8 mt-2 bg-dot-primary-950/80 rounded-2xl backdrop-blur-sm"
+>
+  <div class="navbar-start w-[250px] sm:w-fit">
+    <a
+      href="/#Home"
+      class="flex items-center text-xl gap-2 font-bold group transition-colors duration-200 ease-in-out"
+    >
+      <Pickle
+        class="size-6 text-green-600 transition-colors duration-200 ease-in-out group-hover:text-green-700"
+      />
+      <span
+        class="text-yellow-400 transition-colors duration-200 ease-in-out group-hover:text-yellow-600"
+        >Dot Dager</span
+      >
+    </a>
+  </div>
+  <div class="min-w-[440px] navbar-end hidden sm:flex">
+    <ul class="menu menu-horizontal px-1">
+      <NavLink title="Conoceme" link="/#About" />
+      <NavLink title="Mi Stack" link="/#Stack" />
+      <NavLink title="Contactame" link="/#Contact" />
+    </ul>
+  </div>
+  <div class="dropdown dropdown-end">
+    <div tabindex="0" role="button" class="btn btn-ghost sm:hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-5 w-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h8m-8 6h16"></path>
+      </svg>
+    </div>
+    <ul
+      tabindex="0"
+      class="menu menu-md dropdown-content bg-dot-primary-950 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+    >
+      <NavLink title="Conoceme" link="/#About" />
+      <NavLink title="Mi Stack" link="/#Stack" />
+      <NavLink title="Contactame" link="/#Contact" />
+    </ul>
+  </div>
+</div>

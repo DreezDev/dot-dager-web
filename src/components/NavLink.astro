@@ -1,0 +1,14 @@
+---
+interface Props {
+  title: string;
+  link: string;
+}
+
+const { title, link } = Astro.props;
+---
+
+<li
+  class="hover:bg-purple-900 rounded-lg transition-colors duration-150 ease-in-out font-semibold"
+>
+  <a href={link}>{title}</a>
+</li>
