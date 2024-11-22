@@ -4,7 +4,7 @@ import Instagram from "../icons/Instagram.astro";
 import Youtube from "../icons/Youtube.astro";
 ---
 
-<div class="flex gap-3">
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
   <a
     href="https://www.youtube.com/@DotDager/"
     class="flex items-center p-3 gap-3 border-2 border-red-500 text-red-500 rounded-lg hover:bg-red-500 hover:text-white transition-colors duration-200 ease-in-out"
@@ -21,7 +21,7 @@ import Youtube from "../icons/Youtube.astro";
   </a>
   <a
     href="https://www.instagram.com/dager.32/"
-    class="flex items-center p-3 gap-3 border-2 border-purple-400 text-purple-400 rounded-lg hover:bg-purple-600 hover:border-purple-600 hover:text-white transition-colors duration-200 ease-in-out"
+    class="col-span-2 sm:col-span-1 w-fit mx-auto flex items-center p-3 gap-3 border-2 border-purple-400 text-purple-400 rounded-lg hover:bg-purple-600 hover:border-purple-600 hover:text-white transition-colors duration-200 ease-in-out"
   >
     <Instagram class="size-6" />
     Instagram
