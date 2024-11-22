@@ -1,0 +1,47 @@
+---
+import SocialMedia from "../../components/SocialMedia.astro";
+---
+
+<section
+  id="Home"
+  class="h-screen flex flex-col gap-8 items-center justify-center bg-dot bg-cover scroll-m-20"
+>
+  <div class="text-center">
+    <h2 class="text-gray-400 text-3xl font-semibold">Mariano Luis Villa</h2>
+    <h2 class="text-yellow-400 text-7xl font-bold mt-2 mb-3">DOT DAGER</h2>
+    <h2 class="text-gray-200 h-9 text-4xl font-semibold" id="typed"></h2>
+  </div>
+  <SocialMedia />
+</section>
+
+<script>
+  import Typed from "typed.js";
+  new Typed("#typed", {
+    strings: ["Full Stack Developer", "Content Creator", "Pickles Lover"],
+    typeSpeed: 100,
+    backSpeed: 80,
+    loop: true,
+    showCursor: false,
+  });
+</script>
+
+<style>
+  .bg-dot {
+    background-image: linear-gradient(
+        to left,
+        rgba(30, 8, 44, 0.658),
+        rgba(0, 0, 0, 0.404)
+      ),
+      url(/images/dot-bg-1.webp);
+  }
+  @media (max-width: 640px) {
+    .bg-dot {
+      background-image: linear-gradient(
+          to left,
+          rgba(30, 8, 44, 0.658),
+          rgba(0, 0, 0, 0.404)
+        ),
+        url(/images/dot-bg-2.webp);
+    }
+  }
+</style>
