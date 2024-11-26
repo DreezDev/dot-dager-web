@@ -1,6 +1,5 @@
 ---
 import NavLink from "./NavLink.astro";
-import Pickle from "../icons/Pickle.astro";
 ---
 
 <div
@@ -11,9 +10,10 @@ import Pickle from "../icons/Pickle.astro";
       href="/#Home"
       class="flex items-center text-xl gap-2 font-bold group transition-colors duration-200 ease-in-out"
     >
-      <Pickle
-        class="size-6 text-green-600 transition-colors duration-200 ease-in-out group-hover:text-green-700"
-      />
+      <div
+        class="size-4 bg-red-500 rounded-full transition-colors duration-200 ease-in-out group-hover:text-green-700"
+      >
+      </div>
       <span
         class="text-yellow-400 transition-colors duration-200 ease-in-out group-hover:text-yellow-600"
         >Dot Dager</span
@@ -23,7 +23,7 @@ import Pickle from "../icons/Pickle.astro";
   <div class="min-w-[440px] navbar-end hidden sm:flex">
     <ul class="menu menu-horizontal px-1">
       <NavLink title="Conoceme" link="/#About" />
-      <NavLink title="Mi Stack" link="/#Stack" />
+      <NavLink title="Stack" link="/#Stack" />
       <NavLink title="Contactame" link="/#Contact" />
     </ul>
   </div>
